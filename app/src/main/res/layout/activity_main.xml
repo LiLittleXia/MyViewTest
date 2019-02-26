@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lz="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.lz.myviewtest.MainActivity">
 
-    <com.lz.myviewtest.MyView
-        android:background="@color/colorAccent"
+    <com.lz.myviewtest.MyCircularView
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="100dp"
+        lz:circularColor="#e046ff" />
+
+    <com.lz.myviewtest.MyView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent" />
+
+    <com.lz.myviewtest.MyCircularView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        lz:circularColor="#58fffc" />
 
 </LinearLayout>
